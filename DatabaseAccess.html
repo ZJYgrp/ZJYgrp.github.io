@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Check out the IntEnzyDB database!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="IntEnzyDB, Database">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+    <title>IntEnzyDB Homepage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="functions.js"></script>
+
+</head>
+<body>
+<div class="header" role="banner">
+    <span> <a href="index.html"><img class="logo" src="images/logo.png" alt="Vanderbilt University Logo"></a></span>
+
+    <div class="topnav" id="myTopnav" role="navigation">
+        <h1>IntEnzyDB</h1>
+        <a href="index.html" class="navbutton">Home</a>
+        <a href="research.html" class="navbutton">Research</a>
+        <a href="database.html" class="navbutton active">Database</a>
+        <a href="team.html" class="navbutton">Team</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"><span class="visually-hidden">Menu</span></i>
+        </a>
+    </div>
+    <hr>
+</div>
+
+<div class="container" role="main">
+
+    <div class="textBox">
+        <h2><b>Database of IntEnzy</b></h2>
+
+        <div class="menu">
+            <a href="database.html">Database</a>
+            <a href="DatabaseAccess.html" class="active">Database Access</a>
+            <a href="Statistics.html">Statistics</a>
+        </div>
+
+        <br>
+
+        The database is open to the public through MongoDB Compass, and the <a href="https://zjygrp.github.io" target="_blank">website interface</a> is under construction
+        on GitHub .
+        To access the database, the user should first <a href="https://www.mongodb.com/try/download/compass" target="_blank">download MongoDB Compass</a>.
+        Second, once logging in to MongoDB Compass, the user should paste the connection string <u>mongodb+srv://access_1:Aa123@cluster0.5ey45.mongodb.net/test</u> to the box that says “Paste your connection string (SRV or Standard)“.
+        Third, the user can click on the database name “IntEnzyDB”, which will return four tables, including kinetics table (hydrolases_kinetics), chain table (hydrolases_PDB_general), amino acid table (hydrolases_PDB_amino_acid_table), and atom table (hydrolases_PDB_atom_table).
+        To view the contents, the user can click on a specific table name and view the content in JSON or table format. To download a table, the user can click on a specific table name and then click on the “Export collection” button on the right of “ADD DATA”. The user can export the table with a query or full collection in JSON or CSV format.
+
+    </div>
+
+</div>
+
+<div class="footer" role="contentinfo">
+    <div class="footergrid-container">
+        <div class="footergrid-item">
+            <h3 style="text-align: left">IntEnzyDB</h3><br>
+            <p>Bailu Yan, Xinchun Ran, Li Yuan, Sarah Torrence, Zhongyue (John) Yang<br><br>
+                Contact: <a href="mailto: zhongyue.yang@vanderbilt.edu">Email</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
