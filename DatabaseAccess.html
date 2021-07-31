@@ -32,23 +32,24 @@
 
 <div class="container" role="main">
 
-    <div class="textBox" >
+    <div class="textBox">
         <h2><b>Database of IntEnzy</b></h2>
 
         <div class="menu">
             <a href="database.html">Database</a>
-            <a href="DatabaseAccess.html">Database Access</a>
-            <a href="Statistics.html" class="active">Statistics</a>
+            <a href="DatabaseAccess.html" class="active">Database Access</a>
+            <a href="Statistics.html">Statistics</a>
         </div>
 
-        <br><hr><br>
-        <p align="center">Number Of Hydrolases: 403</p><br>
-        <hr>
-        <iframe class="everviz-iframe" src="https://app.everviz.com/embed/QRcFLDceh/" title="Chart: " style="border: 0; width: 100%; height: 500px"></iframe>
-        <hr>
-        <iframe class="everviz-iframe" src="https://app.everviz.com/embed/fJppSnYRn/" title="Chart: Free Energy " style="border: 0; width: 100%; height: 500px"></iframe>
-        <hr>
-        <iframe class="everviz-iframe" src="https://app.everviz.com/embed/afVT_5poD/" title="Chart: Frequency Of Mutations" style="border: 0; width: 100%; height: 500px"></iframe>
+        <br>
+
+        The database is open to the public through MongoDB Compass, and the <a href="https://zjygrp.github.io" target="_blank">website interface</a> is under construction
+        on GitHub .
+        To access the database, the user should first <a href="https://www.mongodb.com/try/download/compass" target="_blank">download MongoDB Compass</a>.
+        Second, once logging in to MongoDB Compass, the user should paste the connection string <u>mongodb+srv://access_1:Aa123@cluster0.5ey45.mongodb.net/test</u> to the box that says “Paste your connection string (SRV or Standard)“.
+        Third, the user can click on the database name “IntEnzyDB”, which will return four tables, including kinetics table (hydrolases_kinetics), chain table (hydrolases_PDB_general), amino acid table (hydrolases_PDB_amino_acid_table), and atom table (hydrolases_PDB_atom_table).
+        To view the contents, the user can click on a specific table name and view the content in JSON or table format. To download a table, the user can click on a specific table name and then click on the “Export collection” button on the right of “ADD DATA”. The user can export the table with a query or full collection in JSON or CSV format.
+
     </div>
 
 </div>
