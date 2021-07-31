@@ -2,6 +2,7 @@
 
 html {
     font-family: 'Source Sans Pro';
+    background-color: dimgray;
 }
 body{
     overflow-x: hidden;
@@ -44,7 +45,7 @@ h4{
     padding-top: 1px;
     position: absolute;
     top: 0;
-    width: 55px;
+    width: 52px;
 }
 
 .container {
@@ -287,3 +288,5 @@ section.member {
 .menu a.active, .menu a:hover {
     border-bottom: 3px solid dimgray;
 }
+
+
